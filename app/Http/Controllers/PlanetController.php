@@ -22,9 +22,10 @@ class PlanetController extends Controller
     
     }
 
-    public function show()
+    public function show($id)
     {
-    
+        $planet = Planet::find($id);
+        return view('planets.show', ['planet' => $planet]);
     }
 
     public function update()
