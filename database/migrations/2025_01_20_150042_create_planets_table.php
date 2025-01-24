@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('name_en');
             $table->integer('radius');
             $table->integer('weight');
+            $table->timestamps();
         });
     }
 
